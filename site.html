@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LETICIA DAY</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+        body {
+            background-image: url(https://img.freepik.com/fotos-gratis/lindas-flores-da-primavera-e-folhas-em-fundo-branco-com-espaco-negativo_1123-179.jpg?w=826&t=st=1715992247~exp=1715992847~hmac=1d1f9979ace9caf000c7254d68084d08fe1fb0c3b6c98adf059d71bd5956b2da);
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: rgb(134, 26, 223);
+        }
+        .page {
+            background: rgba(0, 0, 0, 0.5) url(https://img.freepik.com/fotos-gratis/lindas-flores-da-primavera-e-folhas-em-fundo-branco-com-espaco-negativo_1123-179.jpg?w=826&t=st=1715992247~exp=1715992847~hmac=1d1f9979ace9caf000c7254d68084d08fe1fb0c3b6c98adf059d71bd5956b2da);
+            background-size: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .title {
+            margin-bottom: 10px;
+            font-size: 3em;
+            background-image: linear-gradient(to right, #ff3366, #ff6699);
+    
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .subtitle {
+            color: #000;
+            font-weight: bold;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 10px;
+            margin-bottom: 25%;
+        }
+        .time {
+            margin-bottom: 5%;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff3366;
+            padding: 10px 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(255, 51, 102, 0.3);
+            width: 80%;
+            box-sizing: border-box;
+        }
+        .dates-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            padding: 0 10px;
+            margin-bottom: 5%;
+        }
+        .date {
+            background-color: rgba(255, 204, 204, 0.8);
+            border: 2px solid #ff3366;
+            border-radius: 10px;
+            padding: 15px;
+            width: 50%;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .date:before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: rotate(45deg);
+            transition: 0.5s;
+        }
+        .date:hover:before {
+            top: -25%;
+            left: -25%;
+            transition: 0.5s;
+        }
+        .date:hover {
+            background-color: rgba(255, 179, 179, 0.8);
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 51, 102, 0.6);
+        }
+        .date a {
+            text-decoration: none;
+            color: #ff3366;
+            font-size: 1.2em;
+            position: relative;
+            z-index: 1;
+        }
+        @media screen and (max-width: 768px) {
+            .title {
+                font-size: 2.5em;
+            }
+            .subtitle {
+                font-size: 1.8em;
+            }
+            .time {
+                font-size: 1em;
+            }
+            .date {
+                padding: 10px;
+            }
+        }
+        @media print {
+            body, .page {
+                background: none;
+                box-shadow: none;
+            }
+            .date {
+                border: 1px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <h1 class="title">LETICIA'S</h1>
+        <h2 class="subtitle">DAY</h2>
+        <div class="time">Horário: 08:00</div>
+        <div class="dates-container">
+            <div class="date">
+                <a href="https://www.google.com/maps/uv?pb=!1s0x92ca9d77260cf19d%3A0xba8de1e4bbb16b77!3m1!7e115!4s%2Fmaps%2Fplace%2Flepan%2Bsanta%2Bines%2Bma%2F%40-3.6540038%2C-45.3768495%2C3a%2C75y%2C239.84h%2C90t%2Fdata%3D*213m4*211e1*213m2*211svdyC1z7Xai3hS4y7Zd3WfQ*212e0*214m2*213m1*211s0x92ca9d77260cf19d%3A0xba8de1e4bbb16b77%3Fsa%3DX%26ved%3D2ahUKEwj15fzxk5aGAxXTqpUCHSAvDKwQpx96BAgOEAA!5slepan%20santa%20ines%20ma%20-%20Pesquisa%20Google!15sCgIgAQ&imagekey=!1e10!2sAF1QipOXre6z7uOVcodKkxnlZP1xs4IMqg5SKpDgZpC0&hl=pt-BR&ved=1t%3A206134&ictx=111" target="_blank">Date 1</a>
+            </div>
+        </div>
+        <div class="time">Horário: 12:00</div>
+        <div class="dates-container">
+            <div class="date">
+                <a href="https://example.com/local2" target="_blank">Date 2</a>
+            </div>
+        </div>
+        <div class="time">Horário: 19:30</div>
+        <div class="dates-container">
+            <div class="date">
+                <a href="https://example.com/local3" target="_blank">Date 3</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
